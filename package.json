@@ -1,0 +1,26 @@
+{
+  "name": "sterowanieklawiaturainstrukcjaswitch",
+  "version": "1.0.0",
+  "description": "samuraj",
+  "main": "app.js",
+  "scripts": {
+    "test": "test",
+    "start": "browser-sync start --server --files \"*.html, *.css, *.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/szymonbarabasz/SterowanieKlawiaturaInstrukcjaSwitch.git"
+  },
+  "keywords": [
+    "ster"
+  ],
+  "author": "Szymon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/szymonbarabasz/SterowanieKlawiaturaInstrukcjaSwitch/issues"
+  },
+  "homepage": "https://github.com/szymonbarabasz/SterowanieKlawiaturaInstrukcjaSwitch#readme",
+  "dependencies": {
+    "browser-sync": "^2.26.14"
+  }
+}

@@ -1,4 +1,14 @@
-*{
-    margin: 0;
-    padding: 0;
+.circle{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.text{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }

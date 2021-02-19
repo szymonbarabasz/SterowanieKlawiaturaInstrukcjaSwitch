@@ -3,26 +3,31 @@ document.addEventListener("DOMContentLoaded", () => {
   const circle = document.querySelector(".circle");
 
   function change(e) {
-    console.log(e.keyCode);
-
+    text.textContent = `Aktualna pozycja (środek koła) to ${circle.offsetLeft} - szerokość i ${circle.offsetTop} - wysokość`;
     switch (e.keyCode) {
       case 37:
-        circle.style.left = circle.offsetLeft - 4 + "px";
+        circle.style.left = circle.offsetLeft - 20 + "px";
         break;
       case 38:
-        circle.style.top = circle.offsetTop - 4 + "px";
+        circle.style.top = circle.offsetTop - 20 + "px";
         break;
       case 39:
-          circle.style.left = circle.offsetLeft + 4 + "px";
-          break;
+        circle.style.left = circle.offsetLeft + 20 + "px";
+        break;
       case 40:
-          circle.style.top = circle.offsetTop + 4 + "px";
-          break;
+        circle.style.top = circle.offsetTop + 20 + "px";
+        break;
       case 32:
-          circle.style.background-color = 
+        const red = Math.floor(Math.random() * 256);
+        const green = Math.floor(Math.random() * 256);
+        const blue = Math.floor(Math.random() * 256);
+        circle.style.backgroundColor = `rgb(${red},${green},${blue})`;
+        break;
+      default:
+        text.textContent = "Kliknąłeś cokolwiek";
+        break;
     }
-    text.textContent = `Aktualna pozycja (środek koła) to ${circle.offsetLeft} - szerokość i ${circle.offsetTop} - wysokość`
   }
-  text.textContent = `Aktualna pozycja (środek koła) to ${circle.offsetLeft} - szerokość i ${circle.offsetTop} - wysokość`
+
   window.addEventListener("keydown", change);
 });
